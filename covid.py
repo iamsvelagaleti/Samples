@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-def lambda_caller():
+def lambda_caller(event, handler):
     response = {}
     response['statusCode'], response['headers'], response['body'] = 200, {}, {}
     response['headers']['Content-Type'] = 'application/json'
